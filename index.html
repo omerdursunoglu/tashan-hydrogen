@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokat Taşhan (Voyvoda Han, 1631) — 3B Mimari Simülasyon</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' rx='3' fill='%238c5a32'/></svg>" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="scene-canvas"></canvas>
+
+  <!-- Minimalist Crosshair (visible only when pointer-locked) -->
+  <div id="crosshair" aria-hidden="true"></div>
+
+  <!-- Minimalist Corner Controls & Time-of-Day Switcher -->
+  <div id="hud">
+    <div class="hud-top-right">
+      <div class="time-switcher" role="group" aria-label="Günün Saati">
+        <button class="time-btn" data-time="noon">Öğle</button>
+        <button class="time-btn active" data-time="golden">Altın Saat</button>
+        <button class="time-btn" data-time="evening">Akşam Fenerleri</button>
+      </div>
+      <button id="help-toggle" class="icon-btn" title="Kontroller" aria-expanded="false">?</button>
+    </div>
+
+    <div id="help-panel" class="help-panel hidden">
+      <div class="help-title">Tokat Taşhan · 1631</div>
+      <div class="help-row"><span>Gezinme</span><b>W A S D</b></div>
+      <div class="help-row"><span>Hızlı Yürüyüş</span><b>Shift</b></div>
+      <div class="help-row"><span>Bakış</span><b>Fare (Ekrana Tıkla)</b></div>
+      <div class="help-row"><span>İmleci Serbest Bırak</span><b>ESC</b></div>
+      <div class="help-note">Taçkapıdan geçip avluya girebilir, doğu yanındaki taş merdivenlerden 2. kat revaklarına çıkabilirsiniz.</div>
+    </div>
+
+    <div id="enter-prompt" class="enter-prompt">
+      <span>Gezinmek için sahneye tıklayın</span>
+      <small>WASD · Shift · Fare</small>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "tokat-tashan-3d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "n8ao": "^1.10.3",
+    "postprocessing": "^6.39.6",
+    "three": "^0.172.0",
+    "three-mesh-bvh": "^0.8.3",
+    "vite": "^6.4.6"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1"
+  }
+}
